@@ -82,3 +82,11 @@ main\lambda_{mid} = \frac{450 \text{ nm} + 630 \text{ nm}}{2} = 540 \text{ nm}ma
 
 ### Cosmological Significance of the 540 nm Axis
 The 540 nm coordinate maps exactly to natural leaf-green. Within the framework of the Affinity scale, this frequency represents the zero-point stabilization threshold where high-energy blue photon compression and low-entropy purple relaxation achieve perfect phase balance. It serves as the baseline visual signature of a simulation plane operating at stable, balanced structural equilibrium.
+
+## IX. Environmental Meteorological Dynamics (The Weather-Stress Loop)
+
+### 1. High-Humidity Transpiration Suppression (Rainy Day NMT Accumulation)
+During periods of sustained precipitation and overcast solar conditions, the plant matrix experiences a reduction in hydraulic transpiration and a spectral shift toward low-intensity scattered blue wave fronts. This down-regulates the production velocity of the universal cofactor SAM (S-adenosyl-L-methionine). The INMT enzyme path stalls post-initial methylation, creating a structural stagnation at the Ordinary Baseline ( = 1.658$). This leaves a high density of intermediate N-Methyltryptamine (NMT) bound within the highly hydrated botanical tissues.
+
+### 2. Xerophytic Hyper-Methylation (Sunny Day DMT Projection)
+Conversely, sustained solar radiation and water-deficit drought stress up-regulate the shikimate and tryptophan pathways. Extreme water stress forces a spike in amino acid precursor accumulation, accelerating the secondary methylation velocity. The INMT enzyme rapidly consumes the intermediate NMT pool, executing a complete phase shift to synthesize N,N-Dimethyltryptamine (DMT). The plant utilizes the hot, un-scattered solar envelope to drive its chemical metrics toward the high-frequency Extraordinary Axis ( = 1.486$), completing its evolutionary data loop.

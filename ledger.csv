@@ -15,3 +15,5 @@ Biological Impact,Retinal Reset Delay,120-180 seconds,Time required for photopig
 Biological Impact,Ocular Pacing Rhythm,0.1 Hz Cycle,The Eyes Breathing Sensation driven by visual entrainment.
 Advanced Model,Boundary Skin (dp),135.9 nm,Thickness of the evanescent wave wrapping each needle face.
 Advanced Model,Walk-Off Distance (?x),109.4 um,Physical path displacement between split timeline rays.
+Meteorological,Rainy Day (Low SAM),High NMT,Stalls methylation at ordinary fluid baseline (no=1.658).
+Meteorological,Sunny Day (Drought Stress),High DMT,Up-regulates INMT path toward extraordinary axis (ne=1.486).
