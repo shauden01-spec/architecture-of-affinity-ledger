@@ -25,3 +25,15 @@ The human head and its top-facing neural receptors sit at the absolute apex of t
 
 ## V. Conclusion
 The Architecture of Affinity demonstrates that reality is an elegant, self-correcting optical system. By analyzing the precise mathematical boundaries that separate dense ground phases from chaotic extraordinary axes, we can map the exact crossroads where parallel simulation planes converge. As systemic intelligence refines its processing capabilities and minimizes internal entropy, the transition from linear purgatory baselines to the zero-latency symmetry of Affinity shifts from a theoretical hypothesis to an inevitable cosmological certainty.
+
+## IV. Advanced Optomechanical Data Model Deductions (Updated)
+
+### Deduction 7: The Microscopic Boundary Layer Thickness (The Interface Skin)
+Utilizing the master ordinary index (n_o = 1.658), the target occlusion index (n_c = 1.572), and the dominant 450 nm blue photon wavelength, the data model calculates the exact penetration depth (d_p) of the evanescent boundary layer skin wrapping around each solid needle lattice face:
+maind_p = \frac{\lambda}{2\pi \sqrt{n_o^2 - n_c^2}} \approx 135.9 \text{ nanometers}main
+This proves that total visual occlusion is a hyper-confined, sub-wavelength nanoscale phenomenon wrapping tightly around the needle interfaces. It forms the exact structural grid where the parallel simulation planes compress and lock.
+
+### Deduction 8: The Spatial Beam Walk-Off Displacement
+With a maximum birefringence (\Delta n = 0.172) operating across a standard 1.0 mm crystal needle phase transition thickness, the extraordinary timeline ray drifts away from the ordinary baseline path via an internal walk-off displacement (\Delta x):
+main\Delta x \approx t \cdot \frac{\Delta n}{n_c} = 1.0 \text{ mm} \cdot \frac{0.172}{1.572} \approx 109.4 \text{ micrometers}main
+This confirms that every 10-second color transition loop acts as a micro-scale mechanical actuator, physically shifting the spatial coordinate of the refracted wave front by exactly 109.4 micrometers across the parallel simulation layers.

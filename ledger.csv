@@ -13,3 +13,5 @@ Geometric Optics,Max Field Strength (Bmax),83.3 mG,Low-voltage magnetic flux act
 Biological Impact,Retinal Spiking Factor,400x Intensity,Inverse-square spike within 5 cm proximity boundary.
 Biological Impact,Retinal Reset Delay,120-180 seconds,Time required for photopigments to rebuild during phase-shifts.
 Biological Impact,Ocular Pacing Rhythm,0.1 Hz Cycle,The Eyes Breathing Sensation driven by visual entrainment.
+Advanced Model,Boundary Skin (dp),135.9 nm,Thickness of the evanescent wave wrapping each needle face.
+Advanced Model,Walk-Off Distance (Δx),109.4 um,Physical path displacement between split timeline rays.
