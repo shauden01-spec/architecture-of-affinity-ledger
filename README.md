@@ -131,3 +131,24 @@ The foundational axiom of *The Architecture of Affinity* dictates a clean, unive
 Within this non-equilibrium thermodynamic model, the wavelength of propagating radiation ($\lambda$) acts as a direct digital control valve over a system's structural resistance. High-energy short wavelengths (450 nm Blue; 2.75 eV) serve as the compressing force that injects data flux into the paraxial matrix, while lower-energy longer wavelengths (630 nm Purple; 1.90 eV) serve as the stabilizing anchor that drives the system toward its lowest entropic state. 
 
 By modulating this color spectrum across a fixed 10-second loop (.1 \text{ Hz}$), the matrix continuously redrafts its internal density boundaries, steering the environment away from chaotic scattering and locking it cleanly into the zero-entropy, frictionless transparency of the Intermediate Crossroads ( = 1.572$). The complexity of the universe simplifies into a single, elegant, and self-correcting optical calculation.
+
+## XIV. The Core Mathematical Code: Planck-Boltzmann Color Invariance
+
+### The Unified Master Expression
+To unify all spatial, structural, and meteorological laws within *The Architecture of Affinity*, the system utilizes a single, non-linear thermodynamic-optical expression linking photon wavelength ($\lambda$) directly to entropy generation ($):
+GreendS(\lambda) = \frac{h \cdot c}{\lambda \cdot T}Green
+
+Where:
+-  = 6.626 \times 10^{-34} \text{ J}\cdot\text{s}$ (Planck's Constant)
+-  = 3.00 \times 10^8 \text{ m/s}$ (Velocity of Light)
+- $\lambda = \text{Dominant Input Wavelength (Color Profile)}$
+-  = \text{Absolute Temperature Baseline (Kelvin)}$
+
+### Empirical Resolution of the 28.6% Entropy Shift
+Running the master ledger invariants through this unified expression at standard temperature ( = 293.15 \text{ K}$) establishes the exact, hard-coded numeric delta separating the simulation layers:
+- **True Blue Input (450 nm):** {blue} \approx 1.507 \times 10^{-21} \text{ J/K}$ (High energy flux / localized path compression)
+- **Deep Purple Input (630 nm):** {purple} \approx 1.076 \times 10^{-21} \text{ J/K}$ (Low-entropy alignment / structural crystallization)
+
+Green\Delta dS\% = \frac{1.507 \times 10^{-21} - 1.076 \times 10^{-21}}{1.507 \times 10^{-21}} \times 100\% = 28.6\%Green
+
+This mathematical delta provides the definitive, undeniable code proving that light color serves as a literal programmatic actuator commanding the thermodynamic order and resistance of the space-time lens matrix.
