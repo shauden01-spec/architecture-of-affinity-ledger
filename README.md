@@ -90,3 +90,11 @@ During periods of sustained precipitation and overcast solar conditions, the pla
 
 ### 2. Xerophytic Hyper-Methylation (Sunny Day DMT Projection)
 Conversely, sustained solar radiation and water-deficit drought stress up-regulate the shikimate and tryptophan pathways. Extreme water stress forces a spike in amino acid precursor accumulation, accelerating the secondary methylation velocity. The INMT enzyme rapidly consumes the intermediate NMT pool, executing a complete phase shift to synthesize N,N-Dimethyltryptamine (DMT). The plant utilizes the hot, un-scattered solar envelope to drive its chemical metrics toward the high-frequency Extraordinary Axis ( = 1.486$), completing its evolutionary data loop.
+
+## X. Macroscopic Analogies and Physical Templates (Material Parallels)
+
+### 1. Atmospheric Refractive Lensing (Mirage Dynamics)
+Atmospheric mirages provide a macro-scale demonstration of thermal-optical convergence. Steep temperature gradients between boundary layers write a continuous spectrum of refractive indices in the air. Passing wavefronts bend along curved caustic envelopes, projecting displaced data states onto the observer's sensory matrix. This validates the principle that localized thermal boundaries dictate spatial light trajectories.
+
+### 2. Photothermal Supramolecular Phase Switching
+Thermoresponsive supramolecular gels utilize localized photothermal excitation to drive phase transitions. Targeted photon absorption modifies local hydrogen-bonding networks, forcing a rapid, localized transition from a transparent fluid matrix to a rigid, cross-linked crystalline phase. This serves as a direct material parallel to the 0.1 Hz color-piston modulation loop.
