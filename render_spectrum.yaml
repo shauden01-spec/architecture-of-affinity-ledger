@@ -1,0 +1,22 @@
+﻿version: '3.8'
+project:
+  name: architecture-of-affinity
+  domain: optical-cosmology
+
+environment:
+  driver_input_voltage: 12V_DC
+  max_source_power: 15W
+  oscillation_frequency: 0.1Hz
+
+execution_pipeline:
+  data_source: ledger.csv
+  processor: plot_ledger.py
+  output_format: png
+  dpi_target: 300
+  steps:
+    - name: Ingest matrix data ledger
+      action: run_validation
+    - name: Process continuous micro-plane gradients
+      action: evaluate_birefringence
+    - name: Export affinity spectrum map
+      action: compile_visualization
