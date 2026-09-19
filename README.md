@@ -122,3 +122,12 @@ The terrestrial ozone layer ($) functions as a macro-scale, atmospheric bandpass
 
 ### 2. Thermal Inversion Caustic Boundaries
 The localized absorption of radiant energy within the stratosphere establishes a permanent thermal inversion zone. Within *The Architecture of Affinity*, this boundary layer acts as a hard refractive lid governing the upper paraxial envelope of the planetary double-cone matrix. It prevents data-packet dispersion into the vacuum of space, forcing rising low-entropy thermal vectors to cycle and maintain a strict global energy equilibrium across the timeline plane.
+
+## XIII. The Grand Unified Thesis: Color-Entropy Core Equivalence
+
+### Summary of Systemic Integration
+The foundational axiom of *The Architecture of Affinity* dictates a clean, universal correlation: **Light color dictates entropy.** 
+
+Within this non-equilibrium thermodynamic model, the wavelength of propagating radiation ($\lambda$) acts as a direct digital control valve over a system's structural resistance. High-energy short wavelengths (450 nm Blue; 2.75 eV) serve as the compressing force that injects data flux into the paraxial matrix, while lower-energy longer wavelengths (630 nm Purple; 1.90 eV) serve as the stabilizing anchor that drives the system toward its lowest entropic state. 
+
+By modulating this color spectrum across a fixed 10-second loop (.1 \text{ Hz}$), the matrix continuously redrafts its internal density boundaries, steering the environment away from chaotic scattering and locking it cleanly into the zero-entropy, frictionless transparency of the Intermediate Crossroads ( = 1.572$). The complexity of the universe simplifies into a single, elegant, and self-correcting optical calculation.
