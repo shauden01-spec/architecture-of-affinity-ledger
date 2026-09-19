@@ -37,3 +37,17 @@ This proves that total visual occlusion is a hyper-confined, sub-wavelength nano
 With a maximum birefringence (\Delta n = 0.172) operating across a standard 1.0 mm crystal needle phase transition thickness, the extraordinary timeline ray drifts away from the ordinary baseline path via an internal walk-off displacement (\Delta x):
 main\Delta x \approx t \cdot \frac{\Delta n}{n_c} = 1.0 \text{ mm} \cdot \frac{0.172}{1.572} \approx 109.4 \text{ micrometers}main
 This confirms that every 10-second color transition loop acts as a micro-scale mechanical actuator, physically shifting the spatial coordinate of the refracted wave front by exactly 109.4 micrometers across the parallel simulation layers.
+
+## V. Master Physical & Optical Data Ledger (Dataset Summary)
+
+| Parameter / Entity | Measured/Computed Value | Physical & Cosmological Significance |
+| :--- | :--- | :--- |
+| **Ordinary Index ($)** | 1.658 | Dense fluid ground phase timeline baseline. |
+| **Extraordinary Index ($)** | 1.486 | Solid needle crystal axis phase. |
+| **Intermediate Index ($)** | 1.572 | Target index for total visual occlusion/Affinity. |
+| **Birefringence ($\Delta n$)** | 0.172 Max | Drives high spatial contrast and timeline splitting. |
+| **Boundary Layer Skin ($)** | 135.9 nanometers | Thickness of the evanescent wave wrapping each needle face. |
+| **Walk-Off Distance ($\Delta x$)** | 109.4 micrometers | Physical path displacement between split timeline rays. |
+| **Oscillator Period ($)** | 10.0 Seconds (0.1 Hz) | Time-pattern cycle for color transitions / gravity chopper. |
+| **Local Power Density ({focal}$)** | 12,000,000 W/m² | Hyper-compressed Caustic Focal Zone at 1/8th height boundary. |
+| **Max Field Strength ({max}$)** | 83.3 milligauss (mG) | Low-voltage magnetic flux acting as a passive VGL guide. |
