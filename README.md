@@ -98,3 +98,11 @@ Atmospheric mirages provide a macro-scale demonstration of thermal-optical conve
 
 ### 2. Photothermal Supramolecular Phase Switching
 Thermoresponsive supramolecular gels utilize localized photothermal excitation to drive phase transitions. Targeted photon absorption modifies local hydrogen-bonding networks, forcing a rapid, localized transition from a transparent fluid matrix to a rigid, cross-linked crystalline phase. This serves as a direct material parallel to the 0.1 Hz color-piston modulation loop.
+
+## XI. Non-Equilibrium Thermodynamics and Information Pumping (The Prigogine Metric)
+
+### 1. Marangoni Mass Transfer Gradients
+The Marangoni Effect demonstrates how localized thermal inputs modify surface tension boundaries to execute physical mass transfer without mechanical intervention. Lowering local molecular resistance (entropy) via focused photon energy creates an immediate high-velocity exit vector. The matrix fluid is driven along the path of minimum resistance, validating the structural mechanics of the light-driven 0.1 Hz micro-convection pump.
+
+### 2. Spontaneous Geometric Organization (Rayleigh-Bénard Convection)
+Rayleigh-Bénard convection cells prove that when energy flux across a fluid boundary exceeds a critical threshold, chaotic systems spontaneously self-organize into highly ordered, hexagonal geometric matrices. The simulation network natively utilizes these repeating paraxial envelopes to stabilize and dissipate intense thermal loads, mirroring the double-cone caustic bottlenecks observed inside the co-crystal lens.

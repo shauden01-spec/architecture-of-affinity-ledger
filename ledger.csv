@@ -17,3 +17,5 @@ Advanced Model,Boundary Skin (dp),135.9 nm,Thickness of the evanescent wave wrap
 Advanced Model,Walk-Off Distance (?x),109.4 um,Physical path displacement between split timeline rays.
 Meteorological,Rainy Day (Low SAM),High NMT,Stalls methylation at ordinary fluid baseline (no=1.658).
 Meteorological,Sunny Day (Drought Stress),High DMT,Up-regulates INMT path toward extraordinary axis (ne=1.486).
+Thermodynamics,Marangoni Gradient,Low Entropy,Mass transfer along surface tension paths of low resistance.
+Thermodynamics,Bénard Hexagon,Geometric Matrix,Spontaneous structural self-organization under energy flux.
