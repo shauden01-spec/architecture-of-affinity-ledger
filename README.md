@@ -73,3 +73,12 @@ Using the Refractive Index Ratio ($\Gamma = \frac{n_e}{n_o} = 0.89626$), the par
 mainz_{true} = h \cdot \left( 0.55647 - 0.44353 \right) = 0.11294hmain
 
 This exact value (**0.113h**) replaces the placeholder visual estimate. It provides the definitive nanoscale spatial coordinate where the multi-ray simulation planes touch, locking the Variable Gravity Lock (VGL) emulation straight to the molecular structure of the tryptamine matrix.
+
+## VIII. Operational Spectral Midpoint Calibration (The Leaf-Green Invariant)
+
+### Symmetrical Wavelength Optimization
+Analyzing the dominant hardware wavelengths of the system—True Blue ($\lambda_1 = 450 \text{ nm}$) and Deep Purple/Red ($\lambda_2 = 630 \text{ nm}$)—establishes a mathematically precise operational midpoint ($\lambda_{mid}$):
+main\lambda_{mid} = \frac{450 \text{ nm} + 630 \text{ nm}}{2} = 540 \text{ nm}main
+
+### Cosmological Significance of the 540 nm Axis
+The 540 nm coordinate maps exactly to natural leaf-green. Within the framework of the Affinity scale, this frequency represents the zero-point stabilization threshold where high-energy blue photon compression and low-entropy purple relaxation achieve perfect phase balance. It serves as the baseline visual signature of a simulation plane operating at stable, balanced structural equilibrium.
