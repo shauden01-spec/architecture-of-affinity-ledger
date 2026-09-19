@@ -19,3 +19,5 @@ Meteorological,Rainy Day (Low SAM),High NMT,Stalls methylation at ordinary fluid
 Meteorological,Sunny Day (Drought Stress),High DMT,Up-regulates INMT path toward extraordinary axis (ne=1.486).
 Thermodynamics,Marangoni Gradient,Low Entropy,Mass transfer along surface tension paths of low resistance.
 Thermodynamics,Bénard Hexagon,Geometric Matrix,Spontaneous structural self-organization under energy flux.
+Thermodynamics,Marangoni Gradient,Low Entropy,Mass transfer along surface tension paths of low resistance.
+Thermodynamics,Bénard Hexagon,Geometric Matrix,Spontaneous structural self-organization under energy flux.
