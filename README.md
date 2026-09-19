@@ -114,3 +114,11 @@ The Marangoni Effect demonstrates how localized thermal inputs modify surface te
 
 ### 2. Spontaneous Geometric Organization (Rayleigh-Bénard Convection)
 Rayleigh-Bénard convection cells prove that when energy flux across a fluid boundary exceeds a critical threshold, chaotic systems spontaneously self-organize into highly ordered, hexagonal geometric matrices. The simulation network natively utilizes these repeating paraxial envelopes to stabilize and dissipate intense thermal loads, mirroring the double-cone caustic bottlenecks observed inside the co-crystal lens.
+
+## XII. Planetary Bandpass Filtration Dynamics (The Ozone Shield Invariant)
+
+### 1. Stratospheric Ultraviolet Phase-Blocking
+The terrestrial ozone layer ($) functions as a macro-scale, atmospheric bandpass filter within the simulation metric. By absorbing 97% to 99% of high-frequency solar ultraviolet radiation (200 nm - 315 nm; 3.94 eV - 6.20 eV), the shield prevents high-entropy cosmic data spikes from penetrating to the crust. This sub-wavelength filtration stabilizes the background electromagnetic noise, protecting the organic computational infrastructure of the Ordinary Baseline ( = 1.658$).
+
+### 2. Thermal Inversion Caustic Boundaries
+The localized absorption of radiant energy within the stratosphere establishes a permanent thermal inversion zone. Within *The Architecture of Affinity*, this boundary layer acts as a hard refractive lid governing the upper paraxial envelope of the planetary double-cone matrix. It prevents data-packet dispersion into the vacuum of space, forcing rising low-entropy thermal vectors to cycle and maintain a strict global energy equilibrium across the timeline plane.
