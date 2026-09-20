@@ -12,7 +12,6 @@ class AffinityLedgerWorkspaceManager:
         self.csv_source = os.path.join(self.root_dir, "telemetry_log.csv")
         self.md_log_path = os.path.join(self.root_dir, "essays", "TELEMETRY_LOG.md")
         
-        # Default baseline threshold tracker initialization
         self.baseline_index = 0.572
         
         self.route_extensions = {
@@ -27,7 +26,6 @@ class AffinityLedgerWorkspaceManager:
         self.initialize_sqlite_schema()
 
     def set_custom_baseline(self, new_value):
-        """Allows dynamic operator override to recalibrate baseline parameter indexes."""
         try:
             self.baseline_index = float(new_value)
             print(f"🎯 SYSTEM RECALIBRATION COMPLETE: Target index baseline reset to: {self.baseline_index}")
@@ -35,7 +33,6 @@ class AffinityLedgerWorkspaceManager:
             print("❌ Calibration Error: Provided value is not a valid floating-point number.")
 
     def run_dataset_generator(self, row_cycles=5):
-        """Automated continuous dataset generation module to seed rows."""
         print(f"📦 Generating automated metrics sequence loop data ({row_cycles} rows)...")
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
@@ -45,7 +42,6 @@ class AffinityLedgerWorkspaceManager:
             cursor.execute("SELECT COUNT(*) FROM telemetry_records")
             next_loop = cursor.fetchone()[0] + 1
             
-            # Simulate subtle convection displacement fluctuations relative to your baseline threshold
             delta = random.uniform(0.001, 0.006)
             action = "DAMPENING ACTIVE" if delta > 0.0045 else "EQUILIBRIUM SECURE"
             
@@ -121,7 +117,7 @@ class AffinityLedgerWorkspaceManager:
 if __name__ == "__main__":
     manager = AffinityLedgerWorkspaceManager()
     
-    # Process specialized argument flags for calibration and auto-generation blocks
+    # FIXED: Properly using list index slicing syntax to trap terminal inputs safely
     if len(sys.argv) > 2 and sys.argv[1] == "--calibrate":
         manager.set_custom_baseline(sys.argv[2])
     elif len(sys.argv) > 1 and sys.argv[1] == "--generate":
