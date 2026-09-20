@@ -1,0 +1,22 @@
+# Home Assistant Core Environment System Configuration File
+# Project Integration: Local Matrix Automation Profile Setup
+
+homeassistant:
+  name: "Affinity Matrix Control Center"
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 0
+  unit_system: metric
+  time_zone: "Australia/Brisbane"
+
+# Enable local device tracking loops without external cloud dependencies
+tapo_control:
+  host: "YOUR_DEVICE_LOCAL_IP"
+
+# Configure manual integration infrastructure hooks
+localtuya:
+  - host: "YOUR_DEVICE_LOCAL_IP"
+    device_id: "YOUR_HARDWARE_DEVICE_ID"
+    local_key: "YOUR_LOCAL_HEX_AUTHENTICATION_KEY"
+    friendly_name: "Affinity Base Lighting Strip"
+    protocol_version: "3.3"

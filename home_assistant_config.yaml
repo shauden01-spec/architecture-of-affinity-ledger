@@ -1,0 +1,36 @@
+# Home Assistant Environment Orchestration Configuration Profile
+# Integration Target: Micro-Convection Pump Controller Telemetry Maps
+
+sensor:
+  - platform: template
+    sensors:
+      affinity_pump_status:
+        friendly_name: "Affinity Convection Pump Operational Status"
+        icon_template: mdi:pump
+        value_template: >-
+          {% if is_state('switch.convection_pump_motor', 'on') %}
+            Active Dampening
+          {% else %}
+            Baseline Equilibrium Secure
+          {% endif %}
+
+      affinity_index_monitor:
+        friendly_name: "Target Optical Core Affinity Tracking Index"
+        unit_of_measurement: "index"
+        icon_template: mdi:ray-vertex
+        value_template: "0.572"
+
+automation:
+  - alias: "Execute Automated Pump Protection Routine"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.matrix_displacement_delta
+        above: 0.0045
+    action:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.convection_pump_motor
+      - service: logbook.log
+        data:
+          name: "Affinity System Alert"
+          message: "Thermodynamic displacement anomaly detected. Initiating 0.1 Hz micro-convection dampening loops."
