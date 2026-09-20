@@ -11,6 +11,7 @@ class AffinityLedgerWorkspaceManager:
         self.db_path = os.path.join(self.root_dir, "datasets", "affinity_core.db")
         self.csv_source = os.path.join(self.root_dir, "telemetry_log.csv")
         self.md_log_path = os.path.join(self.root_dir, "essays", "TELEMETRY_LOG.md")
+        self.external_backup_dir = "C:\\Users\\Admin\\Documents\\architecture-of-affinity\\logs"
         
         self.baseline_index = 0.572
         
@@ -23,7 +24,16 @@ class AffinityLedgerWorkspaceManager:
         
         os.makedirs(os.path.join(self.root_dir, "datasets"), exist_ok=True)
         os.makedirs(os.path.join(self.root_dir, "essays"), exist_ok=True)
+        os.makedirs(self.external_backup_dir, exist_ok=True)
         self.initialize_sqlite_schema()
+
+    def run_external_directory_backup(self):
+        """Automated directory routing function to auto-backup state models to folder mirrors."""
+        if os.path.exists(self.db_path):
+            backup_filename = f"affinity_core_state_backup_{time.strftime('%Y%m%d_%H%M%S')}.db"
+            dest_target = os.path.join(self.external_backup_dir, backup_filename)
+            shutil.copy2(self.db_path, dest_target)
+            print(f"🔒 State model snapshot routed safely to storage directory: /logs/{backup_filename}")
 
     def set_custom_baseline(self, new_value):
         try:
@@ -36,20 +46,16 @@ class AffinityLedgerWorkspaceManager:
         print(f"📦 Generating automated metrics sequence loop data ({row_cycles} rows)...")
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
-        
         for _ in range(row_cycles):
             timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
             cursor.execute("SELECT COUNT(*) FROM telemetry_records")
             next_loop = cursor.fetchone()[0] + 1
-            
             delta = random.uniform(0.001, 0.006)
             action = "DAMPENING ACTIVE" if delta > 0.0045 else "EQUILIBRIUM SECURE"
-            
             cursor.execute('''
                 INSERT INTO telemetry_records (timestamp, loop_count, convection_delta, voltage_action)
                 VALUES (?, ?, ?, ?)
             ''', (timestamp, next_loop, delta, action))
-            
         conn.commit()
         conn.close()
         print("✅ Automated data coordinate block appended to SQL storage matrix.")
@@ -111,13 +117,12 @@ class AffinityLedgerWorkspaceManager:
         self.generate_telemetry_snapshot()
         self.execute_workspace_sweep()
         self.compile_database_to_markdown()
+        self.run_external_directory_backup()
         print("=======================================================")
         print("🏁 Maintenance updates executed successfully.\n")
 
 if __name__ == "__main__":
     manager = AffinityLedgerWorkspaceManager()
-    
-    # FIXED: Properly using list index slicing syntax to trap terminal inputs safely
     if len(sys.argv) > 2 and sys.argv[1] == "--calibrate":
         manager.set_custom_baseline(sys.argv[2])
     elif len(sys.argv) > 1 and sys.argv[1] == "--generate":
