@@ -1,0 +1,37 @@
+# Home Assistant Lovelace User Interface Dashboard Card Profile
+# Project Integration: Crystalline Matrix Telemetry Visualization
+
+type: vertical-stack
+cards:
+  - type: picture-elements
+    title: Affinity Crystalline Matrix Controls
+    image: /local/images/crystal_core_baseline.png
+    elements:
+      - type: state-badge
+        entity: sensor.affinity_index_monitor
+        style:
+          top: 15%
+          left: 15%
+      - type: state-badge
+        entity: sensor.affinity_pump_status
+        style:
+          top: 15%
+          left: 85%
+
+  - type: entities
+    title: Hardware State Operations
+    entities:
+      - entity: switch.convection_pump_motor
+        name: Micro-Convection Control Motor
+        icon: mdi:pump
+      - entity: sensor.matrix_displacement_delta
+        name: Displacement Delta Telemetry
+      - entity: input_number.excitation_wavelength_slider
+        name: Photon Excitation Array Target
+
+  - type: history-graph
+    title: "10-Second Convection Displacement Curves"
+    hours_to_show: 24
+    refresh_interval: 10
+    entities:
+      - entity: sensor.matrix_displacement_delta
