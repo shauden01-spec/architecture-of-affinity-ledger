@@ -1,47 +1,47 @@
 import os
-import shutil
+import sqlite3
 import time
 
-def background_sweeper_daemon():
-    root_dir = "C:\\Users\\Admin\\Documents\\architecture-of-affinity"
-    routes = {
-        ".md": "essays",
-        ".yaml": "essays",
-        ".csv": "datasets",
-        ".png": "datasets",
-        ".tmp": "logs"
-    }
-    
-    print("======================================================================")
-    print("🛰️ AFFINITY FILE SWEEPER DAEMON ACTIVE: Running background sweep loops")
-    print("======================================================================")
-    
-    try:
-        while True:
-            for filename in os.listdir(root_dir):
-                file_path = os.path.join(root_dir, filename)
-                
-                # Safeguard executable assets and hidden tracking logs
-                if os.path.isdir(file_path) or filename.endswith('.py') or filename.endswith('.bat') or filename.startswith('.'):
-                    continue
-                    
-                _, ext = os.path.splitext(filename)
-                if ext.lower() in routes:
-                    dest_folder = os.path.join(root_dir, routes[ext.lower()])
-                    os.makedirs(dest_folder, exist_ok=True)
-                    
-                    dest_path = os.path.join(dest_folder, filename)
-                    if os.path.exists(dest_path):
-                        os.remove(dest_path)
-                        
-                    shutil.move(file_path, dest_path)
-                    print(f"[{time.strftime('%H:%M:%S')}] Daemon automatically swept: {filename} ──> /{routes[ext.lower()]}")
-            
-            # Wait for 60 seconds before executing the next background file check scan
-            time.sleep(60)
-            
-    except KeyboardInterrupt:
-        print("\n🛑 Background sweeper daemon shut down safely by operator.")
-
-if __name__ == "__main__":
-    background_sweeper_daemon()
+class SweeperDaemon:
+                        def __init__(self, db_path="C:\\Users\\Admin\\Documents\\architecture-of-affinity\\ledger.db"):
+                                                        self.db_path = db_path
+                                                                self.max_retention_records = 5000  # Cap row index storage count to ensure rapid dashboard lookups
+                                                                        print(" Sweeper Background Log Daemon initialized successfully.")
+                                                                        
+    def enforce_log_rotation_rules(self):
+                                    """
+                                            Scans ledger database data tables to remove old row records.
+                                                    Maintains rapid I/O times for real-time Home Assistant sensor pushes.
+                                                            """
+                                                                    if not os.path.exists(self.db_path):
+                                                                                                        return
+                                                                                                        
+        with sqlite3.connect(self.db_path) as conn:
+                                            cursor = conn.cursor()
+                                                        try:
+                                                                                                # Count current rows
+                                                                                                                                        cursor.execute("SELECT COUNT(*) FROM affinity_logs")
+                                                                                                                                                        total_records = cursor.fetchone()[0]
+                                                                                                                                                                        
+                if total_records > self.max_retention_records:
+                                                            excess_count = total_records - self.max_retention_records
+                                                                                print(f" [SWEEPER] Log threshold crossed ({total_records}/{self.max_retention_records} rows). Rotating records...")
+                                                                                                    
+                    # Delete the oldest timestamps to enforce the retention wall
+                                        cursor.execute("""
+                                                                DELETE FROM affinity_logs 
+                                                                                        WHERE timestamp IN (
+                                                                                                                    SELECT timestamp FROM affinity_logs 
+                                                                                                                                                ORDER BY timestamp ASC 
+                                                                                                                                                                            LIMIT ?
+                                                                                                                                                                                                    )
+                                                                                                                                                                                                                        """, (excess_count,))
+                                                                                                                                                                                                                                            conn.commit()
+                                                                                                                                                                                                                                                                print(f" -> Successfully cleared {excess_count} historical rows from persistence tables.")
+                                                                                                                                                                                                                                                                            except sqlite3.OperationalError as e:
+                                                                                                                                                                                                                                                                                                                    print(f" Sweeper operational alert: {e}")
+                                                                                                                                                                                                                                                                                                                    
+if __name__ == '__main__':
+                            daemon = SweeperDaemon()
+                                daemon.enforce_log_rotation_rules()
+                                
