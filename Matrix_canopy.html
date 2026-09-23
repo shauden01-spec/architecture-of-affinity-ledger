@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affinity Matrix: Monitor 2 Alignment Canopy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            overflow: hidden;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            transition: background-color 1s ease;
+        }
+
+        #canopy-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+        }
+
+        .data-card {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 25px 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 6px 0;
+            opacity: 0.85;
+            font-family: monospace;
+        }
+
+        .flux-badge {
+            display: inline-block;
+            margin-top: 15px;
+            background: rgba(40, 210, 0, 0.25);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border: 1px solid #28D200;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="canopy-overlay">
+        <div class="data-card">
+            <h1>CANOPY FLUX ALIGNMENT</h1>
+            <p id="clock-display">Current Time: --:--:--</p>
+            <p>Active Lattice: 614,400 Nodes</p>
+            <p>Structural Profile: 1.35:1 Fixed Balance</p>
+            <p id="intensity-display">Calculated Intensity: --%</p>
+            <p id="mode-display">System State: Calibrating...</p>
+            <div class="flux-badge" id="badge-display">EQUILIBRIUM ACTIVE</div>
+        </div>
+    </div>
+
+    <script>
+        function runMatrixCanopySync() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            
+            // Format time string for display
+            const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('clock-display').innerText = `Current Time: ${timeString}`;
+
+            let intensityPct = 100;
+            let hexColor = "#28D200"; // Default Pure 533nm Leaf Green Vector
+            let stateName = "DAYTIME_ACTIVE_LOCKDOWN";
+
+            // Time-Of-Day Dynamic Vector Calculations
+            // Active Daytime Phase (6:00 AM to 6:00 PM) -> 100% Core Glow
+            if (hours >= 6 && hours < 18) {
+                intensityPct = 100;
+                hexColor = "#28D200"; 
+                stateName = "ACTIVE_CANOPY_REORGANIZATION";
+                document.getElementById('badge-display').style.borderColor = "#28D200";
+                document.getElementById('badge-display').style.color = "#ffffff";
+            } 
+            // Evening Transition Phase (6:00 PM to 10:00 PM) -> Gradual Linear Scaling Drop
+            else if (hours >= 18 && hours < 22) {
+                // Scales smoothly from 100% down to 30% over 4 hours
+                const minutesPassed = ((hours - 18) * 60) + minutes;
+                intensityPct = Math.round(100 - (minutesPassed * (70 / 240)));
+                hexColor = "#1B8C00"; // Deepened Mid-Range Green Vector
+                stateName = "EVENING_FLUX_COMPRESSION";
+                document.getElementById('badge-display').style.borderColor = "#1B8C00";
+            } 
+            // Nighttime Rest Phase (10:00 PM to 6:00 AM) -> Locked 10% Sleep Canopy
+            else {
+                intensityPct = 10;
+                hexColor = "#042600"; // Ultra-low Dark Leaf Rest Vector to protect night shade
+                stateName = "SLOW_PACE_SLEEP_CANOPY";
+                document.getElementById('badge-display').style.borderColor = "#042600";
+            }
+
+            // Inject calculated vector properties into the physical page elements
+            document.body.style.backgroundColor = hexColor;
+            document.getElementById('intensity-display').innerText = `Calculated Intensity: ${intensityPct}%`;
+            document.getElementById('mode-display').innerText = `System State: ${stateName}`;
+        }
+
+        // Force immediate baseline run on load, then loop on a solid 1-second interval ticker
+        runMatrixCanopySync();
+        setInterval(runMatrixCanopySync, 1000);
+    </script>
+</body>
+</html>
